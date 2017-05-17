@@ -12,6 +12,7 @@ class App extends Component {
 }
 
 updateGreeting(greeting){
+  // debugger
   this.setState({greeting: greeting })
 }
 
@@ -23,7 +24,7 @@ updateGreeting(greeting){
         <Header greeting={this.state.greeting} />
       </div>
       <div>
-        <GreetingInput greeting={this.state.greeting} updateGreeting={this.updateGreeting.bind(this)} />
+        <GreetingInput greeting={this.state.greeting} dog={this.updateGreeting.bind(this)} />
       </div>
     </div>
     );

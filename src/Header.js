@@ -3,7 +3,12 @@ import React, { Component } from 'react';
 class Header extends Component {
   render() {
     return (
-      <h1>Hello {this.props.greeting} </h1>
+      <div>
+        <div>
+          <h1>Robo Active Listening </h1>
+        </div>
+
+      </div>
     );
   }
 }
